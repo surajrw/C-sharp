@@ -1,0 +1,93 @@
+1 - // Strings are used for storing texts.
+// A string variable contains a coolection of variables surrounded by double quotes.
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      String name="Suraj";
+      Console.WriteLine(name);
+      Console.ReadLine();
+    }
+  }
+}
+
+
+2 - //Length = The length of a string can be found with the length property.
+//We have to take int variable to print the number of character.
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      String name="Suraj";
+      int nameLength = name.Length;
+      Console.WriteLine(nameLength);
+      Console.ReadLine();
+    }
+  }
+}
+
+3 - //Lower and Upper = ToUpper() and ToLower() returns a copy of string converted to uppercase and lowercase.
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      String name="Suraj";
+      
+      Console.WriteLine(name.ToUpper());    
+      Console.WriteLine(name.ToLower());    
+      Console.ReadLine();
+    }
+  }
+}
+
+4 - //Concatenation = String concatenation (+) used to combine two or more strings.
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      String fn="Suraj";
+      String ln="Rawat";
+      String name= fn+ln;    
+      Console.WriteLine(name);    
+      Console.ReadLine();
+    }
+  }
+}
+
+5 - //Index = You can access the character by referring to its index number inside square brackets.
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      String fn="Suraj";   
+      Console.WriteLine(fn[0]);    
+      Console.WriteLine(fn.IndexOf("a"));
+      Console.ReadLine();
+    }
+  }
+}
