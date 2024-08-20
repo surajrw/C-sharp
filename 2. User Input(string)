@@ -1,0 +1,14 @@
+
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string name;
+		    Console.Write("Enter a string - ");
+	     	name = Console.ReadLine();
+		    Console.WriteLine("You entered '{0}' ", name);
+    }
+}
