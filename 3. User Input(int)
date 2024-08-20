@@ -1,0 +1,13 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+      int val;
+      Console.WriteLine("enter value");
+      val =Convert.ToInt32(val);
+      Console.WriteLine("Your value", val);
+    }
+    
+}
