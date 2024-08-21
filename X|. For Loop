@@ -1,0 +1,86 @@
+//for (initialization; condition; iterator)
+{
+	// body of for loop
+}
+
+//1. Print 5 numbers.
+
+using System;
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    { 
+      for(int i=1;i<=5;i++){
+        Console.WriteLine(i);     // 1 2 3 4 5
+        }
+      Console.ReadLine();
+    }
+  }
+}
+
+//2. Sum of N natural numbers.
+
+using System;
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    { 
+      int n=5; int sum=0;
+      for(int i=1;i<=n;i++){
+        sum=sum+i;
+        }
+      Console.WriteLine(sum);
+      Console.ReadLine();  
+    }
+  }
+}
+
+//3. Right Angle Triangle Pattern. 
+
+using System;
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			for (int row = 1; row <= 5; ++row)                //*
+        {                                                 **
+            for (int col = 1; col <= row; ++col)          ***
+            {                                             ****
+                Console.Write("*");                       *****
+            }
+
+            Console.WriteLine();
+        }
+        Console.ReadLine();
+		}
+	}
+}
+
+//4. Inverted Right Angled Pattern.
+
+using System;
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)                 
+		{
+			for (int row = 5; row >= 1; --row)
+        {
+            for (int col = 1; col <= row; ++col)
+            {
+                Console.Write("*");
+            }
+
+            Console.WriteLine();
+        }
+        Console.ReadLine();
+		}
+	}
+}
