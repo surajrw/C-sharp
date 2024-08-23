@@ -1,0 +1,205 @@
+1. Same or not.
+   static void Main(string[] args)
+        {
+            int a,b;
+            Console.WriteLine("enter a");
+            a=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter b");
+            b=Convert.ToInt32(Console.ReadLine());
+            if(a==b)
+            {
+                Console.WriteLine("same");
+            }
+            else
+            {
+                Console.WriteLine("not same");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+2. Even or Odd.
+   static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("enter a");
+            a=Convert.ToInt32(Console.ReadLine());
+            if(a%2==0)
+            {
+                Console.WriteLine("even");
+            }
+            else
+            {
+                Console.WriteLine("odd");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+3. Positive or Negative.
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("enter a");
+            a=Convert.ToInt32(Console.ReadLine());
+  
+            if(a>0)
+            {
+                Console.WriteLine("positive");
+            }
+            else(a==0)
+            {
+                Console.WriteLine("zero");
+            }
+            else 
+            {
+                Console.WriteLine("negative");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+4. Leap Year.
+   //A year is a leap year if “any one of ” the following conditions are satisfied: 
+   //The year is multiple of 400.
+   //The year is a multiple of 4 and not a multiple of 100.
+   static void Main(string[] args)
+        {
+            int year;
+            Console.WriteLine("enter year");
+            year=Convert.ToInt32(Console.ReadLine());
+            if((year%400==0) || (year%100!=0) && (year%4==0))
+            {
+                Console.WriteLine("leap year");
+            }
+            else{
+                Console.WriteLine("not a leap year");   
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+5. Vote or not.
+   static void Main(string[] args)
+        {
+            int age;
+            Console.WriteLine("enter age");
+            age=Convert.ToInt32(Console.ReadLine());
+            if(age>=18)
+            {
+                Console.WriteLine("eligible for vote");
+            }
+            else{
+                Console.WriteLine("not eligible for vote");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+6. Program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
+   static void Main(string[] args)
+        {
+            int m;
+            Console.WriteLine("enter m");
+            m=Convert.ToInt32(Console.ReadLine());
+            if(m>0)
+            {
+                Console.WriteLine("1");
+            }
+            else if(m==0)
+            {
+                Console.WriteLine("0");
+            }
+            else{
+                Console.WriteLine("-1");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+7. Write a C# Sharp program to determine the eligibility for admission to a professional course based on the following criteria.
+   static void Main(string[] args)
+        {
+            int math, phy , che;
+            Console.WriteLine("enter math");
+            math=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter phy");
+            phy=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter che");
+            che=Convert.ToInt32(Console.ReadLine());
+            if(math>=65)
+            {
+                if(phy>=55)
+                {
+                    if(che>=50)
+                    {
+                        if((math+phy+che)>=180)
+                        {
+                            Console.WriteLine("You are eligible");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("you are not eligible");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+8. Write a C# Sharp program to read roll no, name and marks of three subjects and calculate the total, percentage and division.
+   static void Main(string[] args)
+        {
+            int math, phy , che , per,total;
+            Console.WriteLine("enter math");
+            math=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter phy");
+            phy=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter che");
+            che=Convert.ToInt32(Console.ReadLine());
+            total =math+che+phy;
+            per=(total*100)/300;
+            Console.WriteLine(per);
+            if(per>=80)
+            {
+                Console.WriteLine("first division");
+            }
+            else if(per>=60 && per<80)
+            {
+                Console.WriteLine("second division");
+            }
+            else
+            {
+                Console.WriteLine("third division");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+9. Write a C# Sharp program to check whether a triangle is Equilateral, Isosceles or Scalene.
+   static void Main(string[] args)
+        {
+            int a,b,c;
+            Console.WriteLine("enter a");
+            a=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter b");
+            b=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter c");
+            c=Convert.ToInt32(Console.ReadLine());
+            
+            if(a==b && b==c)
+            {
+                Console.WriteLine("equi traingle");
+            }
+            else if(a==b || a==c || b==c)
+            {
+                Console.WriteLine("iso traingle");
+            }
+            else
+            {
+                Console.WriteLine("Scalene triangle");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+10. Vowel or Consonent.
+    static void Main(string[] args)
+        {
+            char ch;
+            Console.WriteLine("enter any character");
+            ch=Convert.ToChar(Console.ReadLine().ToLower());
+            if((ch=='a' )||( ch=='e') || ( ch=='i') || ( ch=='o') || ( ch=='u'))
+            {
+                Console.WriteLine("vowel");
+            }
+            else
+            {
+                Console.WriteLine("consonent");
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+11. 
