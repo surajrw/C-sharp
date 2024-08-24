@@ -202,4 +202,43 @@
             }
             Console.ReadLine();
 ---------------------------------------------------------------------------------------
-11. 
+11. Write a C# Sharp program that calculates the area of geometrical shapes using a menu-driven approach.
+     static void Main(string[] args)
+        {
+            int choice,l,b,h,r;
+            double area=0;
+            Console.WriteLine("enter 1 for circle");
+            Console.WriteLine("enter 2 for rectangle");
+            Console.WriteLine("enter 3 for triangle");
+            Console.WriteLine("enter choice");
+            choice=Convert.ToInt32(Console.ReadLine());
+            switch(choice)
+            {
+                case 1:
+                Console.Write("Input radius of the circle : ");
+                r = Convert.ToInt32(Console.ReadLine()); 
+                area = 3.14 * r * r;  
+                Console.WriteLine(area);
+                break;
+                 
+                case 2:
+                Console.Write("Input length of the rectangle : ");
+                l = Convert.ToInt32(Console.ReadLine()); 
+                Console.Write("Input breadth of the rectangle : ");
+                b = Convert.ToInt32(Console.ReadLine()); 
+                area=l*b;
+                Console.WriteLine(area);
+                break;
+                
+                case 3:
+                Console.Write("Input height of the triangle : ");
+                h = Convert.ToInt32(Console.ReadLine()); 
+                Console.Write("Input breadth of the triangle : ");
+                b = Convert.ToInt32(Console.ReadLine()); 
+                area=0.5*h*b;
+                Console.WriteLine(area);
+                break;
+            }
+            Console.ReadLine();
+---------------------------------------------------------------------------------------
+
