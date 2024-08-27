@@ -49,4 +49,252 @@
         Console.WriteLine(avg);
         Console.ReadLine();
 ---------------------------------------------------------------------------------------------------
-5. 
+5. Write a C# Sharp program to display the cube of an integer up to given number.
+    static void Main()
+    {
+        int i,n,cube=0;
+        Console.WriteLine("enter range");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=0;i<=n;++i)
+        {
+            cube=i*i*i;
+            Console.WriteLine(cube);
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+6. Write a program in C# Sharp to display the multiplication table of a given integer.
+   static void Main()
+    {
+        int i,n,table;
+        Console.WriteLine("enter number");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=1;i<=10;++i)
+        {
+            table=n*i;
+            Console.WriteLine(table);
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+7. Write a C# Sharp program to display the n terms of odd natural numbers and their sums.
+   static void Main()
+    {
+        int i,n,sum=0;
+        Console.WriteLine("enter range");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=1;i<=n;++i)
+        {   
+            if(i%2!=0)
+            {
+                Console.WriteLine(i);
+                sum=sum+i;
+            } 
+        }
+        Console.WriteLine(sum);
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+8. Write a program in C# Sharp to display a right angle triangle with an asterisk.
+   static void Main()
+    {
+        int i,j;
+        for(i=1;i<=5;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                Console.Write("*");
+            }
+             Console.Write("\n");
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+9. Display the pattern like right angle triangle using a number.
+   static void Main()
+    {
+        int i,j;
+        for(i=1;i<=5;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                Console.Write(j);
+            }
+             Console.Write("\n");
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+9. Write a program in C# Sharp to display the n terms of even natural number and their sum.
+   static void Main()
+    {
+        int i,n,sum=0;
+        Console.WriteLine("enter range");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=1;i<=n;++i)
+        {   
+            if(i%2==0)
+            {
+                Console.WriteLine(i);
+                sum=sum+i;
+            } 
+        }
+        Console.WriteLine(sum);
+        Console.ReadLine(); 
+---------------------------------------------------------------------------------------------------
+10. Write a C# Sharp program that displays the n terms of square natural numbers and their sum.
+    static void Main()
+    {
+        int i,n,sum=0,sq;
+        Console.WriteLine("enter range");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=1;i<=n;++i)
+        {   
+            sq=i*i;
+            Console.WriteLine(sq);  
+            sum=sum+sq;
+        }
+        Console.WriteLine(sum);
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------------
+11. Write a C# Sharp program to find the number and sum of all integers between 100 and 200 divisible by 9.
+    static void Main()
+    {
+        int i,sum=0;
+        for(i=100;i<=200;++i)
+        {   
+            if(i%9==0)
+            {
+                Console.WriteLine(i);
+                sum=sum+i;
+            }
+        }
+        Console.WriteLine(sum);
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+12. Write a C# Sharp program to check whether a given number is an Armstrong number or not.
+    static void Main()
+    {
+        int n,cube=0;
+        Console.WriteLine("enter number");
+        n=Convert.ToInt32(Console.ReadLine());
+        while(n!=0)
+        {
+            n=n%10;
+            n=n/10;
+            cube=cube+(n*n*n);
+        }
+        if(cube==n)
+        {
+            Console.WriteLine("armstrong number");
+        }
+        else
+        {
+            Console.WriteLine("not a armstrong number");
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+13. Factorial of a number.
+    public static void Main()  // Main method, entry point of the program
+    {
+        int i,n,fact=1;
+        Console.WriteLine("enter number");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=1;i<=n;++i)
+        {
+            fact=fact*i;
+        }
+        Console.WriteLine(fact);
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+14. Prime Number.
+    public static void Main()  // Main method, entry point of the program
+    {
+        int i,n,count=0;
+        Console.WriteLine("enter number");
+        n=Convert.ToInt32(Console.ReadLine());
+        for(i=2;i<n;++i)
+        {
+            if(n%i==0)
+            {
+                Console.WriteLine("not a prime number");
+                count=1;
+                break;
+            }
+            if(count==0)
+            {
+                Console.WriteLine("prime number");
+            }
+        }
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+15. Reverse a String.
+    public static void Main()  // Main method, entry point of the program
+    {
+        string str,revstr="";
+        int i;
+        Console.WriteLine("enter string");
+        str=(Console.ReadLine());
+        str=str.ToLower();
+        for(i=str.Length-1;i>=0;--i)
+        {
+            revstr=revstr + str[i];
+        }
+        Console.WriteLine(revstr);
+        Console.ReadLine();
+---------------------------------------------------------------------------------------------------
+16. Reverse a Number.
+    public static void Main()  // Main method, entry point of the program
+    {
+        int num=12345;
+        int res=0,rem;
+        while(num!=0)
+        {
+            rem=num%10;
+            res=res*10+rem;
+            num=num/10;
+        }
+        Console.WriteLine(res);
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------------
+17. Palindrome number.
+     public static void Main()  // Main method, entry point of the program
+    {
+        int rem,num,temp,rev=0;
+        Console.WriteLine("enter number");
+        num=Convert.ToInt32(Console.ReadLine());
+        temp=num;
+        while(num!=0)
+        {
+            rem=num%10;
+            rev=rev*10+rem;
+            num=num/10;
+        }
+        if(rev==temp)
+        {
+            Console.WriteLine("palindrome number");
+        }
+        else
+        {
+            Console.WriteLine("not a palindrome number");
+        }
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------------
+18. Fibonacci.
+     public static void Main()  // Main method, entry point of the program
+    {
+        int num1=0,num2=1,num3=0,range;
+        Console.WriteLine("enter range");
+        range=Convert.ToInt32(Console.ReadLine());
+        Console.Write(num1+" ");
+        Console.Write(num2+" ");
+        while(range>1)
+        {
+            num3=num1+num2;
+            Console.Write(num3+" ");
+            num1=num2;
+            num2=num3;
+            range--;
+        }
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------------
+END OF FILE.
