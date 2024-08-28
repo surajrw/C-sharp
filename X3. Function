@@ -1,0 +1,118 @@
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+function are used to perform certain actions.
+
+static void MyMethod() 
+{
+  Console.WriteLine("I just got executed!");
+}
+static void Main(string[] args)
+{
+  MyMethod();
+}
+
+MyMethod() is the name of the method
+static means that the method belongs to the Program class and not an object of the Program class.
+void means that this method does not have a return value.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Paramters and Arguements :-
+Information can be passed to methods as parameter. Parameters act as variables inside the method.
+They are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+When a parameter is passed to the method, it is called an argument. 
+
+static void mymethod(string fname)
+    {
+        Console.WriteLine( fname + " doe");
+    }
+    public static void Main() 
+    {
+        mymethod("mahesh");
+        mymethod("ramesh");
+        mymethod("suresh");
+        Console.ReadLine();
+    }
+
+static void mymethod(string fname, int age)
+    {
+        Console.WriteLine( fname + " doe " + age);
+    }
+    public static void Main()  
+    {
+        mymethod("mahesh", 30);
+        mymethod("ramesh", 40);
+        mymethod("suresh", 50);
+        Console.ReadLine();
+    }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Default Parameter Value :-
+You can also use a default parameter value, by using the equals sign (=).
+
+static void mymethod(string country= "Sweden")
+    {
+        Console.WriteLine(country);
+    }
+    public static void Main() 
+    {
+        mymethod("india");
+        mymethod();
+        mymethod("usa");
+        Console.ReadLine();
+    }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Return Values :-
+we used the void keyword in all examples, which indicates that the method should not return a value.
+If you want the method to return a value, you can use a primitive data type (such as int or double) instead of void, and use the return keyword inside the method.
+
+static int mymethod(int x)
+    {
+        return x+3;
+    }
+    public static void Main() 
+    {
+        Console.WriteLine(mymethod(5));
+        Console.ReadLine();
+    }
+
+static int mymethod(int x, int y)
+    {
+        return x + y;
+    }
+    public static void Main() 
+    {
+        Console.WriteLine(mymethod(5,5));
+        Console.ReadLine();
+    }
+
+static int mymethod(int x, int y)
+    {
+        return x + y;
+    }
+    public static void Main() 
+    {   
+        int z = mymethod(8,9);
+        Console.WriteLine(z);
+        Console.ReadLine();
+    }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Method Overloading :-
+With method overloading, multiple methods can have the same name with different parameters.
+
+static int mymethod(int x, int y)
+    {
+        return x + y;
+    }
+    
+    static double mymethod(double x , double y)
+    {
+        return x + y;
+    }
+    public static void Main() 
+    {   
+        int mynum1 = mymethod(8,9);
+        double mynum2 = mymethod(8.22,8.33);
+        Console.WriteLine(mynum1);
+        Console.Write(mynum2);
+        Console.ReadLine();
+    }
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+END OF FILE
