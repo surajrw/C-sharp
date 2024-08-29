@@ -1,0 +1,61 @@
+1. Write a program in C# Sharp to create a user defined function.
+    static void mymethod()
+    {
+        Console.WriteLine("hello");
+        Console.WriteLine("world");
+    }
+    
+    public static void Main() 
+    {   
+        mymethod();
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------
+2. Write a program in C# Sharp to create a user defined function with parameters.
+    static void mymethod(string fname)
+    {
+        Console.WriteLine("hello " + fname);
+        Console.WriteLine("world");
+    }
+    
+    public static void Main() 
+    {   
+        mymethod("john");
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------
+3. Write a program in C# Sharp to create a function for the sum of two numbers.
+   static int mymethod(int x , int y)
+    {
+        return x+y;
+    }
+    
+    public static void Main() 
+    {   
+        Console.WriteLine(mymethod(15,16));
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------
+4.  Write a program in C# Sharp to create a function to swap two integer numbers.
+    static void mymethod(ref int x ,ref int y)
+    {
+        int temp;
+        temp=x;
+        x=y;
+        y=temp;
+    }
+    
+    public static void Main() 
+    {   
+        int n1,n2;
+        Console.WriteLine("enter 1st number");
+        n1=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("enter 2nd number");
+        n2=Convert.ToInt32(Console.ReadLine());
+        mymethod(ref n1,ref n2);
+        Console.WriteLine(n1);
+        Console.WriteLine(n2);
+        Console.ReadLine();
+    }
+---------------------------------------------------------------------------------------------
+END OF FILE
