@@ -1,0 +1,67 @@
+Class Members :-
+Fields and methods inside classes are often referred to as "Class Members".
+Fields :-
+Variables inside a class are called fields, and that you can access them by creating an object of the class, and by using the dot syntax (.).
+
+class MyClass
+{
+  // Class members
+  string color = "red";        // field
+  int maxSpeed = 200;          // field
+  public void fullThrottle()   // method
+  {
+    Console.WriteLine("The car is going as fast as it can!");
+  }
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+Creating multiple objects of one class:
+
+class car
+    {
+        string wheels;
+        int speed;
+        static void Main()
+        {
+            car FORD =new car();
+            FORD.wheels="four";
+            FORD.speed=300;
+
+            car MERC =new car();
+            MERC.wheels="ten";
+            MERC.speed=400;
+
+            Console.WriteLine(FORD.wheels);
+            Console.WriteLine(MERC.speed);
+        }
+    }
+-------------------------------------------------------------------------------------------------------------------------------------
+Object Methods :-
+Methods normally belong to a class, and they define how an object of a class behaves.
+The method must be public. And remember that we use the name of the method followed by two parentheses () and a semicolon ; to call (execute) the method.
+
+class car
+    {
+        string wheels;
+        int speed;
+        public void fulltod()
+        {
+            Console.WriteLine("helllooo");
+        }
+        static void Main()
+        {
+            car FORD =new car();
+            FORD.wheels="four";
+            FORD.speed=300;
+
+            car MERC =new car();
+            MERC.wheels="ten";
+            MERC.speed=400;
+
+            Console.WriteLine(FORD.wheels);
+            Console.WriteLine(MERC.speed);
+            
+            FORD.fulltod();
+        }
+    }
+-------------------------------------------------------------------------------------------------------------------------------------
+END OF FILE
