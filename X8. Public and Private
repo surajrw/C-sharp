@@ -1,0 +1,32 @@
+Public Modifier :- 
+If you declare a field with a public access modifier, it is accessible for all classes:
+
+class Car
+{
+  public string model = "Mustang";
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Car myObj = new Car();
+    Console.WriteLine(myObj.model);
+  }
+}
+----------------------------------------------------------------------------------------------------------------
+Private Modifier :-
+If you declare a field with a private access modifier, it can only be accessed within the same class:
+
+class Car
+{
+  private string model = "Mustang";
+
+  static void Main(string[] args)
+  {
+    Car myObj = new Car();
+    Console.WriteLine(myObj.model);
+  }
+}
+----------------------------------------------------------------------------------------------------------------
+END OF FILE
