@@ -1,0 +1,38 @@
+Polymorphism and Overriding Methods :-
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+Inheritance lets us inherit fields and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
+class vehicle
+    {
+        public void honk()
+        {
+            Console.WriteLine("tutt putt");
+        }
+    }
+    class car:vehicle
+    {
+        public void honk()
+        {
+            Console.WriteLine("hurr hurr");
+        }
+    }
+    class truck:vehicle
+    {
+        public void honk()
+        {
+            Console.WriteLine("durr durr");
+        }
+    }
+    
+    static void Main()
+    {
+        vehicle myvehicle=new vehicle();
+        vehicle mycar=new car();
+        vehicle mytruck=new truck();
+        
+        myvehicle.honk();
+        mycar.honk();
+        mytruck.honk();
+    }
+-----------------------------------------------------------------------------------------------------------------------------------
+END OF FILE
